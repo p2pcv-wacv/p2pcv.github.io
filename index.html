@@ -5,31 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pixels to Patients (P2P-CV) — WACV 2026 Workshop</title>
 
-  <!-- Primary Meta -->
-  <meta name="description" content="Pixels to Patients (P2P-CV): Bridging Computer Vision State-of-the-Art with Clinical Impact — WACV 2026 Workshop." />
-  <meta name="keywords" content="WACV 2026, computer vision, medical AI, healthcare, workshop, foundation models, fairness, generalization, interpretability" />
-
-  <!-- Open Graph / Social -->
-  <meta property="og:title" content="Pixels to Patients (P2P-CV) — WACV 2026 Workshop" />
+  <meta name="description" content="Pixels to Patients (P2P-CV): Bridging Computer-Vision State-of-the-Art with Clinical Impact — WACV 2026 Workshop." />
+  <meta property="og:title" content="P2P-CV @ WACV 2026" />
   <meta property="og:description" content="Bridging CV State-of-the-Art with Clinical Impact at WACV 2026." />
   <meta property="og:image" content="assets/social-preview.png" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://p2p-cv.github.io/" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Pixels to Patients (P2P-CV) — WACV 2026" />
-  <meta name="twitter:description" content="Workshop on bridging CV innovations with clinical practice." />
-  <meta name="twitter:image" content="assets/social-preview.png" />
-
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="assets/favicon.png" />
 </head>
 
 <body>
-  <!-- ==================== Header ==================== -->
   <header class="site-header">
     <div class="brand">
-      <img src="assets/logo.svg" alt="Pixels to Patients (P2P-CV) Workshop logo" class="logo" />
+      <img src="assets/logo.svg" alt="P2P-CV logo" class="logo" />
       <div class="brand-text">
         <h1>Pixels to Patients (P2P-CV)</h1>
         <p class="subtitle">Bridging CV State-of-the-Art with Clinical Impact — WACV 2026 Workshop</p>
@@ -37,131 +24,161 @@
     </div>
 
     <nav class="tabs" role="tablist" aria-label="Workshop navigation">
-      <button class="tab active" data-tab="cfp" role="tab" aria-selected="true">Call for Papers</button>
-      <button class="tab" data-tab="submission" role="tab" aria-selected="false">Submission</button>
-      <button class="tab" data-tab="dates" role="tab" aria-selected="false">Important Dates</button>
-      <button class="tab" data-tab="program" role="tab" aria-selected="false">Program</button>
-      <button class="tab" data-tab="contact" role="tab" aria-selected="false">Contact</button>
+      <button class="tab active" data-tab="cfp" aria-selected="true">Call for Papers</button>
+      <button class="tab" data-tab="submission">Submission</button>
+      <button class="tab" data-tab="dates">Dates</button>
+      <button class="tab" data-tab="program">Program</button>
+      <button class="tab" data-tab="organizers">Organizers</button>
+      <button class="tab" data-tab="accepted">Accepted Papers</button>
+      <button class="tab" data-tab="sponsors">Sponsors</button>
+      <button class="tab" data-tab="contact">Contact</button>
     </nav>
   </header>
 
-  <!-- ==================== Main ==================== -->
   <main>
-    <!-- ---------- CFP ---------- -->
+    <!-- =============== CFP =============== -->
     <section id="cfp" class="panel active" role="tabpanel">
       <h2>Call for Papers (CFP)</h2>
       <p>
-        We invite contributions presenting core computer-vision innovations that
-        <em>translate effectively into clinical practice</em> — bridging algorithmic methods
-        and deployment challenges to make insights relevant for both medical AI
-        and the broader CV community.
+        We invite contributions presenting cutting-edge CV innovations that
+        <em>translate effectively into clinical practice</em> — bridging
+        algorithmic methods and deployment challenges.
       </p>
-
-      <h3>Topics of Interest</h3>
       <ul class="grid">
-        <li>Foundation models for healthcare (pretraining, fine-tuning, adaptation)</li>
-        <li>Vision–language learning for decision support and reporting</li>
-        <li>Domain shift and generalization across scanners, sites, and populations</li>
-        <li>Deployment: MLOps, continual learning, monitoring, and regulation</li>
-        <li>Trustworthy and interpretable AI; safety-critical evaluation</li>
-        <li>Fairness and bias auditing in heterogeneous cohorts</li>
-        <li>Data efficiency: self-supervised, active, or weak supervision</li>
-        <li>Quantitative biomarkers and prognosis modeling</li>
-        <li>Human–AI collaboration; clinician-in-the-loop systems</li>
+        <li>Foundation models for healthcare</li>
+        <li>Vision–language learning for decision support</li>
+        <li>Domain shift &amp; generalization</li>
+        <li>Deployment &amp; monitoring in clinical workflows</li>
+        <li>Trustworthy, interpretable &amp; fair AI</li>
+        <li>Data efficiency (SSL, active, weak supervision)</li>
+        <li>Quantitative biomarkers &amp; prognosis</li>
+        <li>Human–AI collaboration</li>
       </ul>
-
-      <p class="note">These topics align with the officially accepted WACV 2026 proposal scope.</p>
     </section>
 
-    <!-- ---------- Submission ---------- -->
+    <!-- =============== Submission =============== -->
     <section id="submission" class="panel" role="tabpanel">
       <h2>Submission Instructions</h2>
-
-      <h3>Tracks</h3>
       <ol>
-        <li><strong>Regular Papers</strong> (≤ 8 pages): archival, double-blind; highlight both CV contribution and clinical translation.</li>
-        <li><strong>Extended Abstracts</strong> (2–4 pages): non-archival; works-in-progress or pilot/negative results.</li>
-        <li><strong>Problem-Pitch Proposals</strong> (2 slides): non-archival; reviewed by organizers and presented live to seed collaborations.</li>
+        <li><b>Regular Papers</b> (≤ 8 pages): archival, double-blind.</li>
+        <li><b>Extended Abstracts</b> (2–4 pages): non-archival, works-in-progress.</li>
+        <li><b>Problem-Pitch Proposals</b> (2 slides): non-archival, live discussion.</li>
       </ol>
-
-      <h3>Proceedings &amp; Policy</h3>
-      <ul>
-        <li><strong>Accepted papers will appear in the official WACV 2026 workshop proceedings.</strong></li>
-        <li>All presenting authors must register for the workshop.</li>
-      </ul>
-
-      <h3>Formatting &amp; Submission</h3>
-      <p>
-        Please follow the WACV 2026 author kit for formatting guidelines.
-        Submission links and LaTeX/Word templates will be added here once released by WACV.
-      </p>
-
-      <div class="alert">
-        <strong>Note:</strong> Clarifications about proceedings and templates will be updated as soon as official WACV materials are available.
-      </div>
+      <p>Follow the WACV 2026 author kit for formatting; templates will be posted once released.</p>
     </section>
 
-    <!-- ---------- Dates ---------- -->
+    <!-- =============== Dates =============== -->
     <section id="dates" class="panel" role="tabpanel">
-      <h2>Important Dates <span>(All times AoE)</span></h2>
+      <h2>Important Dates (AoE)</h2>
       <ul class="dates">
-        <li><span>Workshop Date</span><strong>March 6, 2026</strong></li>
-        <li><span>Submission Window</span><strong>Nov 6 – Nov 28, 2025</strong></li>
-        <li><span>Deadline Extension</span><strong>Dec 1, 2025</strong></li>
-        <li><span>Acceptance Notification</span><strong>Jan 2, 2026</strong></li>
-        <li><span>Poster Upload</span><strong>Jan 30, 2026</strong></li>
+        <li><span>Workshop</span><strong>Mar 6 2026</strong></li>
+        <li><span>Submission</span><strong>Nov 6 – Nov 28 2025</strong></li>
+        <li><span>Extension</span><strong>Dec 1 2025</strong></li>
+        <li><span>Notification</span><strong>Jan 2 2026</strong></li>
+        <li><span>Poster Upload</span><strong>Jan 30 2026</strong></li>
       </ul>
-      <p class="note">The workshop will run as a full-day event. Detailed schedule below.</p>
     </section>
 
-    <!-- ---------- Program ---------- -->
+    <!-- =============== Program =============== -->
     <section id="program" class="panel" role="tabpanel">
       <h2>Program Overview (Tentative)</h2>
-      <p>
-        The workshop will feature keynotes, oral and poster sessions,
-        a problem-pitch track, and a panel discussion on real-world deployment.
-      </p>
-
       <div class="program-grid">
-        <div><time>09:00 – 09:10</time> Opening Remarks</div>
-        <div><time>09:10 – 09:50</time> Keynote 1 — Bradley J. Erickson</div>
-        <div><time>09:50 – 10:30</time> Oral Session I</div>
-        <div><time>10:30 – 11:00</time> Coffee / Networking</div>
-        <div><time>11:00 – 11:30</time> Keynote 2 — Faisal Mahmood</div>
-        <div><time>11:30 – 12:30</time> Problem-Pitch &amp; Benchmark Seeds</div>
-        <div><time>12:30 – 14:00</time> Lunch + Poster Session</div>
-        <div><time>14:00 – 14:30</time> Keynote 3 — Kenneth Philbrick</div>
-        <div><time>14:30 – 15:15</time> Fireside Chat — Nassir Navab</div>
-        <div><time>15:15 – 15:30</time> Oral Session II</div>
-        <div><time>15:30 – 16:00</time> Coffee Break</div>
-        <div><time>16:00 – 16:45</time> Panel — Deployment in the Real World</div>
-        <div><time>16:45 – 17:00</time> Closing Remarks</div>
+        <div><time>09:00</time> Opening Remarks</div>
+        <div><time>09:10</time> Keynote 1 — Bradley J. Erickson</div>
+        <div><time>09:50</time> Oral Session I</div>
+        <div><time>10:30</time> Coffee / Networking</div>
+        <div><time>11:00</time> Keynote 2 — Faisal Mahmood</div>
+        <div><time>11:30</time> Problem-Pitch &amp; Benchmarks</div>
+        <div><time>12:30</time> Lunch + Posters</div>
+        <div><time>14:00</time> Keynote 3 — Kenneth Philbrick</div>
+        <div><time>14:30</time> Fireside Chat — Nassir Navab</div>
+        <div><time>16:00</time> Panel: Deployment in the Real World</div>
+        <div><time>16:45</time> Closing Remarks</div>
       </div>
-
-      <p class="note">Invited speakers and committee members will be confirmed closer to the event date.</p>
     </section>
 
-    <!-- ---------- Contact ---------- -->
+    <!-- =============== Organizers =============== -->
+    <section id="organizers" class="panel" role="tabpanel">
+      <h2>Organizers &amp; Committees</h2>
+      <div class="org-grid">
+        <div>
+          <h3>General Chairs</h3>
+          <ul>
+            <li>Dr. Sahika Betul Yayli (Mayo Clinic)</li>
+            <li>Fatih Ibrahim Ozlugedik (TUM &amp; Helmholtz Munich)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Program Committee</h3>
+          <ul>
+            <li>Furkan Daşdelen (Helmholtz Munich)</li>
+            <li>Rao Muhammad Umer (DFKI)</li>
+            <li>Carsten Marr (Helmholtz Munich)</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Advisory Board</h3>
+          <ul>
+            <li>Bradley J. Erickson (Mayo Clinic)</li>
+            <li>Faisal Mahmood (Harvard Med School)</li>
+            <li>Nassir Navab (TUM)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== Accepted Papers =============== -->
+    <section id="accepted" class="panel" role="tabpanel">
+      <h2>Accepted Papers (Coming Soon)</h2>
+      <p>Accepted papers will appear here after notifications on Jan 2 2026.</p>
+      <ul class="papers">
+        <li class="placeholder">TBA — list of accepted contributions after review.</li>
+      </ul>
+    </section>
+
+    <!-- =============== Sponsors =============== -->
+    <section id="sponsors" class="panel" role="tabpanel">
+      <h2>Sponsors &amp; Partners</h2>
+      <div class="sponsor-grid">
+        <img src="assets/mayo.png" alt="Mayo Clinic logo" />
+        <img src="assets/helmholtz.png" alt="Helmholtz Munich logo" />
+        <img src="assets/tum.png" alt="TUM logo" />
+        <img src="assets/wacv.png" alt="WACV logo" />
+      </div>
+      <p class="note">Sponsorship and institutional support details will be updated closer to the event.</p>
+    </section>
+
+    <!-- =============== Contact =============== -->
     <section id="contact" class="panel" role="tabpanel">
       <h2>Contact</h2>
       <ul class="contact">
-        <li><span>Workshop Title</span>Pixels to Patients: Bridging CV State-of-the-Art with Clinical Impact (P2P-CV)</li>
-        <li><span>Primary Contact</span><a href="mailto:yayli.sahikabetul@mayo.edu">Dr. Sahika Betul Yayli (Mayo Clinic)</a></li>
-        <li><span>Format</span>Full-day · Anticipated audience 50–90</li>
-        <li><span>Proceedings</span>Included in official WACV 2026 workshop proceedings</li>
+        <li><b>Email:</b> <a href="mailto:yayli.sahikabetul@mayo.edu">yayli.sahikabetul@mayo.edu</a></li>
+        <li><b>Format:</b> Full-day · Audience 50–90</li>
+        <li><b>Proceedings:</b> Official WACV 2026 Workshop Proceedings</li>
       </ul>
-      <p class="note">Organizers and committee details as per accepted proposal.</p>
     </section>
   </main>
 
-  <!-- ==================== Footer ==================== -->
   <footer class="site-footer">
-    <small>
-      © 2025 P2P-CV Workshop @ WACV 2026 · Built for GitHub Pages · 
-      <a href="#cfp">Back to top ↑</a>
-    </small>
+    <small>© 2025 P2P-CV @ WACV 2026 · Built for GitHub Pages · <a href="#cfp">Back to Top</a></small>
   </footer>
 
-  <script src="script.js"></script>
+  <!-- =============== Smooth Tab Script =============== -->
+  <script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.panel');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetId = tab.dataset.tab;
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+
+      tab.classList.add('active');
+      const panel = document.getElementById(targetId);
+      panel.classList.add('active');
+    });
+  });
+  </script>
 </body>
 </html>
