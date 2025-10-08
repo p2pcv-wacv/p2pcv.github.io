@@ -1,3 +1,8 @@
+/* ---------------------------------------------
+   P2P-CV @ WACV 2026 — Workshop Stylesheet
+   Base theme preserved, extended for readability
+---------------------------------------------- */
+
 :root {
   --accent: #0051ff;
   --bg: #f9fafc;
@@ -5,23 +10,29 @@
   --muted: #666;
   --radius: 12px;
   --transition: 0.4s ease;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
+/* Global layout */
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   color: var(--text);
   background: var(--bg);
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
+/* ---------------------------------------------
+   Header + Branding
+---------------------------------------------- */
 header.site-header {
-  background: white;
+  background: #fff;
   border-bottom: 2px solid #eee;
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: var(--shadow);
 }
 
 .brand {
@@ -35,13 +46,21 @@ header.site-header {
   height: 60px;
 }
 
+.brand-text h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text);
+}
+
 .subtitle {
   margin: 0;
   color: var(--muted);
   font-size: 0.95rem;
 }
 
-/* Tabs */
+/* ---------------------------------------------
+   Navigation Tabs
+---------------------------------------------- */
 .tabs {
   margin-top: 1rem;
   display: flex;
@@ -53,9 +72,10 @@ header.site-header {
   border: none;
   background: #eee;
   border-radius: var(--radius);
-  padding: 0.5rem 1rem;
+  padding: 0.55rem 1.1rem;
   cursor: pointer;
-  transition: background var(--transition);
+  transition: background var(--transition), color var(--transition);
+  font-size: 0.95rem;
 }
 
 .tab:hover,
@@ -64,15 +84,20 @@ header.site-header {
   color: #fff;
 }
 
-/* Panels */
+/* ---------------------------------------------
+   Panels / Sections
+---------------------------------------------- */
 .panel {
   display: none;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity var(--transition), transform var(--transition);
-  padding: 2rem;
-  max-width: 900px;
+  padding: 3rem 1.5rem;
+  max-width: 950px;
   margin: auto;
+  background: #fff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .panel.active {
@@ -81,7 +106,29 @@ header.site-header {
   transform: translateY(0);
 }
 
-/* Grids */
+.panel h2 {
+  color: var(--accent);
+  margin-top: 0;
+  font-size: 1.7rem;
+}
+
+.panel h3 {
+  margin-top: 1.8rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.panel p {
+  margin: 0.75rem 0;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+/* ---------------------------------------------
+   Grids and Layout Helpers
+---------------------------------------------- */
 .grid,
 .program-grid,
 .org-grid,
@@ -91,50 +138,115 @@ header.site-header {
 }
 
 .program-grid {
-  grid-template-columns: 1fr 3fr;
-  align-items: center;
+  grid-template-columns: 90px 1fr;
+  align-items: start;
   font-size: 0.95rem;
+}
+
+.program-grid time {
+  color: var(--accent);
+  font-weight: 600;
 }
 
 .org-grid {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.org-grid h3 {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.org-grid ul {
+  background: #f3f6ff;
+  border-radius: var(--radius);
+  padding: 0.8rem 1rem;
+  box-shadow: var(--shadow);
 }
 
 .sponsor-grid {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   justify-items: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
 
 .sponsor-grid img {
   max-height: 60px;
   object-fit: contain;
   filter: grayscale(100%);
-  transition: filter var(--transition);
-}
-.sponsor-grid img:hover {
-  filter: none;
+  transition: filter var(--transition), transform var(--transition);
 }
 
+.sponsor-grid img:hover {
+  filter: none;
+  transform: scale(1.05);
+}
+
+/* ---------------------------------------------
+   Dates, Contact, Lists
+---------------------------------------------- */
 ul.dates li,
 ul.contact li {
   list-style: none;
-  margin: 0.25rem 0;
+  margin: 0.35rem 0;
   display: flex;
   justify-content: space-between;
+  padding: 0.35rem 0.6rem;
+  background: #f8f9ff;
+  border-radius: var(--radius);
+  border: 1px solid #eef1ff;
+}
+
+ul.dates strong {
+  color: var(--accent);
 }
 
 .note {
   color: var(--muted);
   font-size: 0.9rem;
   margin-top: 1rem;
+  text-align: center;
 }
 
+/* ---------------------------------------------
+   Footer
+---------------------------------------------- */
 footer.site-footer {
   text-align: center;
   padding: 2rem 1rem;
   border-top: 1px solid #eee;
   font-size: 0.85rem;
   color: var(--muted);
+  background: #fff;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ---------------------------------------------
+   Responsiveness
+---------------------------------------------- */
+@media (max-width: 700px) {
+  header.site-header {
+    padding: 1rem;
+  }
+
+  .program-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 2rem 1rem;
+  }
+
+  .tab {
+    flex: 1 1 auto;
+    text-align: center;
+  }
 }
