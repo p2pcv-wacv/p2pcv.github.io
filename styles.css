@@ -249,4 +249,77 @@ footer a {
     flex: 1 1 auto;
     text-align: center;
   }
+
+/* ---------------------------------------------
+   Additions for main landing page (index.html)
+---------------------------------------------- */
+
+html { scroll-behavior: smooth; }
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0033cc 0%, #0051ff 60%, #007bff 100%);
+  color: #fff;
+  padding: 6rem 1.5rem;
+  text-align: center;
+  border-bottom: 5px solid #0045d4;
+}
+
+.hero h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text {
+  max-width: 800px;
+  margin: auto;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #fff;
+  color: #0051ff;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all var(--transition);
+  margin-top: 1rem;
+}
+
+.btn-primary:hover {
+  background: #e9f0ff;
+  transform: translateY(-2px);
+}
+
+/* Speaker Cards */
+.speaker-card {
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 1rem;
+  box-shadow: var(--shadow);
+  transition: transform var(--transition);
+}
+
+.speaker-card:hover {
+  transform: translateY(-4px);
+}
+
+.speaker-photo {
+  width: 100%;
+  border-radius: var(--radius);
+  margin-bottom: 0.75rem;
+  box-shadow: var(--shadow);
+}
+
+/* Fade-in animation for sections */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
