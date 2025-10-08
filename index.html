@@ -3,12 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pixels to Patients (P2P-CV) — WACV 2026 Workshop</title>
-
+  <title>P2P-CV @ WACV 2026 — Pixels to Patients</title>
   <meta name="description" content="Pixels to Patients (P2P-CV): Bridging Computer Vision State-of-the-Art with Clinical Impact — WACV 2026 Workshop." />
-  <meta property="og:title" content="P2P-CV @ WACV 2026" />
-  <meta property="og:description" content="Bridging CV State-of-the-Art with Clinical Impact at WACV 2026." />
-  <meta property="og:image" content="assets/social-preview.png" />
   <link rel="icon" href="assets/favicon.png" type="image/png" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -19,253 +15,113 @@
       <img src="assets/logo.svg" alt="P2P-CV logo" class="logo" />
       <div class="brand-text">
         <h1>Pixels to Patients (P2P-CV)</h1>
-        <p class="subtitle">Bridging Computer Vision State-of-the-Art with Clinical Impact — <strong>WACV 2026</strong></p>
+        <p class="subtitle">Bridging Computer Vision State-of-the-Art with Clinical Impact</p>
+        <p><strong>Full-Day Workshop · March 6, 2026 · WACV 2026</strong></p>
       </div>
     </div>
-
-    <nav class="tabs" role="tablist" aria-label="Workshop navigation">
-      <button class="tab active" data-tab="about" aria-selected="true">About</button>
-      <button class="tab" data-tab="cfp">Call for Papers</button>
-      <button class="tab" data-tab="submission">Submission</button>
-      <button class="tab" data-tab="dates">Dates</button>
-      <button class="tab" data-tab="program">Program</button>
-      <button class="tab" data-tab="organizers">Organizers</button>
-      <button class="tab" data-tab="impact">Impact</button>
-      <button class="tab" data-tab="accepted">Accepted Papers</button>
-      <button class="tab" data-tab="sponsors">Sponsors</button>
-      <button class="tab" data-tab="contact">Contact</button>
-    </nav>
   </header>
 
   <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-text">
+        <h2>From Algorithms to Impact</h2>
+        <p>
+          <b>P2P-CV</b> connects computer vision researchers, clinicians, and industry leaders 
+          to accelerate the translation of AI breakthroughs into real-world patient care. 
+          Join us at <strong>WACV 2026</strong> to explore the frontier between innovation and clinical deployment.
+        </p>
+        <a href="#about" class="btn-primary">Learn More ↓</a>
+      </div>
+    </section>
 
-    <!-- =============== ABOUT =============== -->
-    <section id="about" class="panel active" role="tabpanel">
+    <!-- ABOUT -->
+    <section id="about" class="panel fade-in">
       <h2>About the Workshop</h2>
       <p>
-        <strong>Pixels to Patients (P2P-CV)</strong> is a full-day workshop at <b>WACV 2026</b> dedicated to
-        bridging the gap between cutting-edge computer vision research and its safe, effective deployment
-        in real-world clinical practice.
-      </p>
-      <p>
-        Medical imaging remains one of the most socially impactful applications of CV, yet significant
-        challenges persist in translating algorithms from laboratory prototypes into trustworthy clinical tools.
-        This workshop provides a platform for dialogue among <em>researchers, clinicians, and industry experts</em>
-        to explore the full translation pipeline — from data and model development to validation,
-        monitoring, and regulation.
+        <b>Pixels to Patients (P2P-CV)</b> is a full-day workshop dedicated to bridging the gap between 
+        computer-vision research and its safe, effective deployment in healthcare.
+        It addresses the complete pipeline—from foundation model training to clinical monitoring and regulation.
       </p>
       <ul>
-        <li>Explore how foundation models and multimodal learning can advance healthcare AI.</li>
-        <li>Discuss real-world deployment, fairness, and interoperability challenges.</li>
-        <li>Foster collaborations across academic, clinical, and industrial communities.</li>
+        <li>Foundation models and multimodal learning for medical imaging.</li>
+        <li>Domain generalization and cross-institution robustness.</li>
+        <li>Trustworthy, explainable, and fair AI for clinical deployment.</li>
+        <li>Human–AI collaboration and continual learning in healthcare systems.</li>
       </ul>
     </section>
 
-    <!-- =============== CFP =============== -->
-    <section id="cfp" class="panel" role="tabpanel">
-      <h2>Call for Papers (CFP)</h2>
-      <p>
-        We invite <strong>original research contributions</strong> that present technical innovations while
-        addressing the translation of computer vision into clinical practice.
-      </p>
-      <h3>Relevant Topics</h3>
-      <ul class="grid">
-        <li>Foundation models for medical imaging: pre-training, fine-tuning, and adaptation</li>
-        <li>Vision–language and multimodal learning for clinical decision support</li>
-        <li>Domain adaptation and generalization across sites and populations</li>
-        <li>Clinical deployment: validation, continual learning, and monitoring</li>
-        <li>Trustworthy and explainable AI for safety and interpretability</li>
-        <li>Fairness and equity in medical AI</li>
-        <li>Data-efficient learning: active, weak, and self-supervised methods</li>
-        <li>Quantitative imaging biomarkers and prognosis modeling</li>
-        <li>Human–AI collaboration and interfaces for clinician-AI teamwork</li>
-      </ul>
-
-      <h3>Tracks</h3>
-      <ol>
-        <li>
-          <b>Regular Papers</b> (≤ 8 pages, excluding references): archival papers presenting complete, original research.
-          Published in the official <strong>WACV 2026 Workshop Proceedings</strong>.
-        </li>
-        <li>
-          <b>Extended Abstracts</b> (2–4 pages, excluding references): non-archival submissions for preliminary,
-          ongoing, or negative-result studies. Ideal for early-stage work and discussion.
-        </li>
-        <li>
-          <b>Problem-Pitch Proposals</b> (≤ 2 slides): non-archival, designed for clinicians or industry partners
-          to present concrete unmet clinical challenges and invite collaboration.
-        </li>
-      </ol>
-      <p>
-        All submissions undergo rigorous review by the program committee under a <b>double-blind policy</b>.
-        Regular Papers and Extended Abstracts will be peer-reviewed; Problem Pitches will be curated by the
-        organizers for clarity and collaborative potential.
-      </p>
-    </section>
-
-    <!-- =============== SUBMISSION =============== -->
-    <section id="submission" class="panel" role="tabpanel">
-      <h2>Submission Instructions</h2>
-      <p>
-        Manuscripts must follow the <b>WACV 2026 formatting guidelines</b> and be fully anonymized.
-        All accepted <b>Regular Papers</b> will appear in the official WACV 2026 workshop proceedings.
-      </p>
-      <ul>
-        <li>Submit via the official CMT / OpenReview link (to be announced).</li>
-        <li>Include clear statements of <em>clinical relevance</em>, <em>deployment challenges</em>,
-            and <em>data limitations</em>.</li>
-        <li>At least one author must register and present at the workshop.</li>
-      </ul>
-      <p><em>Templates and submission links will be released once available from the WACV committee.</em></p>
-    </section>
-
-    <!-- =============== DATES =============== -->
-    <section id="dates" class="panel" role="tabpanel">
-      <h2>Important Dates (AoE)</h2>
-      <ul class="dates">
-        <li><span>CFP Release</span><strong>October 2025</strong></li>
-        <li><span>Submission Deadline</span><strong>November 28, 2025</strong></li>
-        <li><span>Deadline Extension</span><strong>December 1, 2025</strong></li>
-        <li><span>Notification to Authors</span><strong>January 2, 2026</strong></li>
-        <li><span>Poster Upload</span><strong>January 30, 2026</strong></li>
-        <li><span>Workshop Day</span><strong>March 6, 2026</strong></li>
-      </ul>
-    </section>
-
-    <!-- =============== PROGRAM =============== -->
-    <section id="program" class="panel" role="tabpanel">
-      <h2>Program Overview (Tentative)</h2>
-      <div class="program-grid">
-        <div><time>09:00</time> Opening Remarks</div>
-        <div><time>09:10</time> Keynote 1 — <b>Prof. Bradley J. Erickson</b> (Mayo Clinic): <em>Building Multidisciplinary Bridges for Medical AI</em></div>
-        <div><time>09:50</time> Oral Session I</div>
-        <div><time>10:30</time> Coffee Break / Networking</div>
-        <div><time>11:00</time> Keynote 2 — <b>Prof. Chieh-Ju Chao</b> (Mayo Clinic): <em>Intelligent Imaging Pipelines for Cardiology</em></div>
-        <div><time>11:30</time> Collaboration Session — <em>Problem-Pitch & Solution-Match</em></div>
-        <div><time>12:30</time> Lunch + Poster Session</div>
-        <div><time>14:00</time> Keynote 3 — <b>Dr. Kenneth Philbrick</b> (Google Research, Health AI): <em>Foundation Models in Health: Opportunities and Lessons</em></div>
-        <div><time>14:30</time> Fireside Chat — <b>Prof. Nassir Navab</b> (TUM / Helmholtz Munich): <em>Research–Clinical Translation</em></div>
-        <div><time>16:00</time> Panel Discussion — <em>Deployment in the Real World</em></div>
-        <div><time>16:45</time> Closing Remarks</div>
-      </div>
-
-      <h3>Panelists</h3>
-      <ul>
-        <li><b>Gian Marco Conte</b> — Mayo Clinic (Validation to Post-Deployment Monitoring)</li>
-        <li><b>Kevin O’Donnell</b> — Canon Medical Research USA (Standards and Interoperability)</li>
-        <li><b>Paulo Kuriki</b> — UT Southwestern (Large-Scale Clinical AI Deployment)</li>
-      </ul>
-    </section>
-
-    <!-- =============== ORGANIZERS =============== -->
-    <section id="organizers" class="panel" role="tabpanel">
-      <h2>Organizers &amp; Committees</h2>
+    <!-- KEYNOTE SPEAKERS -->
+    <section id="keynotes" class="panel fade-in">
+      <h2>Keynote Speakers</h2>
       <div class="org-grid">
-        <div>
-          <h3>General Chairs</h3>
-          <ul>
-            <li><b>Dr. Sahika Betul Yayli</b> — Mayo Clinic (<a href="mailto:yayli.sahikabetul@mayo.edu">yayli.sahikabetul@mayo.edu</a>)</li>
-            <li><b>Dr. Bradley J. Erickson</b> — Mayo Clinic</li>
-          </ul>
+
+        <div class="speaker-card">
+          <img src="assets/keynote_erickson.jpg" alt="Bradley Erickson photo" class="speaker-photo" />
+          <h3>Prof. Bradley J. Erickson, M.D., Ph.D.</h3>
+          <p><b>Mayo Clinic</b> — Director, Mayo Clinic AI Lab</p>
+          <p>
+            Pioneering leader in quantitative imaging and computer-aided diagnosis.
+            His work integrates AI into radiology workflows for disease detection and prognosis.
+          </p>
         </div>
-        <div>
-          <h3>Program Chairs</h3>
-          <ul>
-            <li><b>Bardia Khosravi</b> — Yale University</li>
-            <li><b>Pouria Rouzrokh</b> — Yale University</li>
-            <li><b>Elham Mahmoudi</b> — Mayo Clinic</li>
-          </ul>
+
+        <div class="speaker-card">
+          <img src="assets/keynote_chao.jpg" alt="Chieh-Ju Chao photo" class="speaker-photo" />
+          <h3>Prof. Chieh-Ju Chao, M.D.</h3>
+          <p><b>Mayo Clinic</b> — Department of Cardiology</p>
+          <p>
+            Develops intelligent imaging pipelines linking algorithmic insights to real-world outcomes in cardiology.
+          </p>
         </div>
-        <div>
-          <h3>Advisory Board</h3>
-          <ul>
-            <li>Prof. Nassir Navab — TUM / Helmholtz Munich</li>
-            <li>Dr. Kenneth Philbrick — Google Research (Health AI)</li>
-            <li>Prof. Chieh-Ju Chao — Mayo Clinic</li>
-          </ul>
+
+        <div class="speaker-card">
+          <img src="assets/keynote_philbrick.jpg" alt="Kenneth Philbrick photo" class="speaker-photo" />
+          <h3>Dr. Kenneth Philbrick, Ph.D.</h3>
+          <p><b>Google Research (Health AI)</b></p>
+          <p>
+            Research lead for foundation models and multimodal learning in healthcare, including <em>MedGemma</em>.
+          </p>
+        </div>
+
+        <div class="speaker-card">
+          <img src="assets/keynote_navab.jpg" alt="Nassir Navab photo" class="speaker-photo" />
+          <h3>Prof. Nassir Navab, Ph.D.</h3>
+          <p><b>Technical University of Munich & Helmholtz Munich</b></p>
+          <p>
+            Pioneer in medical AR and surgical AI. Leads research on human–AI collaboration and computer-assisted interventions.
+          </p>
         </div>
       </div>
-
-      <h3>Program Committee</h3>
-      <p>
-        Includes members from Mayo Clinic, TUM, Yale, Google Research, Canon Medical,
-        San Raffaele Hospital, and others, representing a multidisciplinary blend of
-        computer vision, clinical, and industry expertise.
-      </p>
     </section>
 
-    <!-- =============== IMPACT =============== -->
-    <section id="impact" class="panel" role="tabpanel">
-      <h2>Motivation &amp; Impact</h2>
-      <p>
-        Despite remarkable progress in computer vision, a gap remains between research
-        breakthroughs and real-world clinical deployment. This workshop examines
-        healthcare as a case study for robust and trustworthy CV deployment.
-      </p>
+    <!-- OUTCOMES -->
+    <section id="outcomes" class="panel fade-in">
+      <h2>Expected Outcomes</h2>
       <ul>
-        <li>Identify methodological, infrastructural, and regulatory barriers to safe deployment.</li>
-        <li>Encourage collaboration among CV researchers, clinicians, and industry leaders.</li>
-        <li>Promote fairness, transparency, and reproducibility in clinical AI pipelines.</li>
+        <li>Concrete strategies for safe deployment of foundation models in healthcare.</li>
+        <li>Collaborations linking unmet clinical problems with technical solutions.</li>
+        <li>Identification of datasets and benchmarks for clinical AI translation.</li>
+        <li>Proceedings published in official <b>WACV 2026 Workshop</b> volume.</li>
       </ul>
-      <p>
-        By grounding technical challenges in the high-stakes context of patient care,
-        <b>P2P-CV</b> aims to ensure that state-of-the-art vision systems evolve into
-        <em>trustworthy, clinically meaningful, and equitable</em> AI tools.
-      </p>
-    </section>
-
-    <!-- =============== ACCEPTED PAPERS =============== -->
-    <section id="accepted" class="panel" role="tabpanel">
-      <h2>Accepted Papers (Coming Soon)</h2>
-      <p>Accepted papers will appear here after notifications on <strong>January 2, 2026</strong>.</p>
-    </section>
-
-    <!-- =============== SPONSORS =============== -->
-    <section id="sponsors" class="panel" role="tabpanel">
-      <h2>Sponsors &amp; Institutional Partners</h2>
-      <div class="sponsor-grid">
-        <img src="assets/mayo.png" alt="Mayo Clinic logo" />
-        <img src="assets/helmholtz.png" alt="Helmholtz Munich logo" />
-        <img src="assets/tum.png" alt="TUM logo" />
-        <img src="assets/yale.png" alt="Yale University logo" />
-        <img src="assets/wacv.png" alt="WACV logo" />
+      <div style="text-align:center; margin-top:2rem;">
+        <a href="program.html" class="btn-primary">View Full Program →</a>
       </div>
-      <p class="note">
-        We gratefully acknowledge institutional support from Mayo Clinic, Helmholtz Munich,
-        Technical University of Munich, and Yale University.
-      </p>
-    </section>
-
-    <!-- =============== CONTACT =============== -->
-    <section id="contact" class="panel" role="tabpanel">
-      <h2>Contact</h2>
-      <ul class="contact">
-        <li><b>Primary Contact:</b> Dr. Sahika Betul Yayli — <a href="mailto:yayli.sahikabetul@mayo.edu">yayli.sahikabetul@mayo.edu</a></li>
-        <li><b>Workshop Format:</b> Full-day · Expected audience: 50–90 participants</li>
-        <li><b>Proceedings:</b> Official WACV 2026 Workshop Proceedings</li>
-        <li><b>Location:</b> WACV 2026 Conference Venue, United States</li>
-      </ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <small>© 2025 P2P-CV @ WACV 2026 · Built for GitHub Pages · <a href="#about">Back to Top</a></small>
+    <small>© 2025 Pixels to Patients (P2P-CV) · WACV 2026 · <a href="#hero">Back to Top ↑</a></small>
   </footer>
 
-  <!-- =============== Smooth Tab Script =============== -->
+  <!-- Fade-in effect script -->
   <script>
-  const tabs = document.querySelectorAll('.tab');
-  const panels = document.querySelectorAll('.panel');
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      const targetId = tab.dataset.tab;
-      tabs.forEach(t => t.classList.remove('active'));
-      panels.forEach(p => p.classList.remove('active'));
-      tab.classList.add('active');
-      document.getElementById(targetId).classList.add('active');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
     });
   });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
   </script>
 </body>
 </html>
