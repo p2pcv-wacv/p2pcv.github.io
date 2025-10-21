@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Regular Papers Track - P2P-CV @ WACV 2026</title>
+  <meta name="description" content="Submit your complete research to the Regular Papers track at P2P-CV Workshop, WACV 2026">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="assets/logo.svg" alt="P2P-CV Logo" class="nav-logo">
+        <span class="nav-title">P2P-CV @ WACV 2026</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#cfp">Call for Papers</a></li>
+        <li><a href="index.html#dates">Dates</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <a href="index.html#cfp">Call for Papers</a> / <span>Regular Papers</span>
+      </div>
+      <h1>Track 1: Regular Papers</h1>
+      <p class="page-subtitle">Archival submissions for complete, original research</p>
+      <div class="track-badge archival">Archival Track</div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Overview Section -->
+    <section class="section">
+      <div class="container content-narrow">
+        <div class="info-box primary">
+          <h2>📄 Track Overview</h2>
+          <div class="info-grid">
+            <div class="info-item">
+              <strong>Length:</strong>
+              <span>Up to 8 pages (excluding references)</span>
+            </div>
+            <div class="info-item">
+              <strong>Type:</strong>
+              <span>Archival</span>
+            </div>
+            <div class="info-item">
+              <strong>Publication:</strong>
+              <span>Official WACV 2026 Workshop Proceedings</span>
+            </div>
+            <div class="info-item">
+              <strong>Review:</strong>
+              <span>Double-blind peer review</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Purpose & Scope</h2>
+        <p>
+          The Regular Papers track invites <strong>complete, original research</strong> that advances the state-of-the-art 
+          in computer vision for medical imaging while addressing the practical challenges of clinical deployment. 
+          This archival track is ideal for mature, well-validated work that makes significant contributions to the field.
+        </p>
+
+        <h2>What We're Looking For</h2>
+        <div class="requirements-list">
+          <div class="requirement-item">
+            <div class="req-icon">✓</div>
+            <div class="req-content">
+              <h3>Technical Innovation</h3>
+              <p>Novel methods, architectures, or approaches that push the boundaries of medical imaging AI. This could include new foundation models, vision-language frameworks, or domain adaptation techniques.</p>
+            </div>
+          </div>
+
+          <div class="requirement-item">
+            <div class="req-icon">✓</div>
+            <div class="req-content">
+              <h3>Clinical Relevance</h3>
+              <p>Clear articulation of how your work addresses real clinical needs. Discuss the clinical problem, current standard of care, and how your approach improves patient outcomes or clinical workflows.</p>
+            </div>
+          </div>
+
+          <div class="requirement-item">
+            <div class="req-icon">✓</div>
+            <div class="req-content">
+              <h3>Rigorous Evaluation</h3>
+              <p>Comprehensive experimental validation on appropriate datasets, with statistical analysis and comparison to relevant baselines. Include ablation studies and failure case analysis.</p>
+            </div>
+          </div>
+
+          <div class="requirement-item">
+            <div class="req-icon">✓</div>
+            <div class="req-content">
+              <h3>Deployment Considerations</h3>
+              <p>Discussion of practical deployment challenges including: computational requirements, data requirements, regulatory considerations, integration with clinical systems, and scalability.</p>
+            </div>
+          </div>
+
+          <div class="requirement-item">
+            <div class="req-icon">✓</div>
+            <div class="req-content">
+              <h3>Data Transparency</h3>
+              <p>Clear description of datasets used, their limitations, potential biases, and generalization capabilities across different populations, scanners, or institutions.</p>
+            </div>
+          </div>
+
+          <div class="requirement-item">
+            <div class="req-icon">✓</div>
+            <div class="req-content">
+              <h3>Reproducibility</h3>
+              <p>Sufficient implementation details to enable reproduction. We encourage (but do not require) sharing of code and pre-trained models.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Relevant Research Topics</h2>
+        <div class="topics-columns">
+          <div class="topic-column">
+            <ul>
+              <li><strong>Foundation Models:</strong> Pre-training strategies, fine-tuning approaches, adaptation for medical domains</li>
+              <li><strong>Vision-Language Models:</strong> Multimodal learning, clinical report generation, visual question answering</li>
+              <li><strong>Domain Adaptation:</strong> Cross-scanner generalization, multi-site validation, domain shift mitigation</li>
+              <li><strong>Segmentation & Detection:</strong> Organ segmentation, lesion detection, anatomical landmark identification</li>
+              <li><strong>Classification & Diagnosis:</strong> Disease classification, severity grading, prognosis prediction</li>
+            </ul>
+          </div>
+          <div class="topic-column">
+            <ul>
+              <li><strong>Explainable AI:</strong> Saliency methods, counterfactual explanations, clinician-interpretable visualizations</li>
+              <li><strong>Fairness & Bias:</strong> Bias detection and mitigation, fairness across demographics, equitable performance</li>
+              <li><strong>Data-Efficient Learning:</strong> Few-shot learning, active learning, self-supervised learning, weak supervision</li>
+              <li><strong>Quantitative Imaging:</strong> Radiomics, imaging biomarkers, texture analysis, functional imaging</li>
+              <li><strong>Human-AI Collaboration:</strong> Interactive systems, uncertainty quantification, AI-assisted diagnosis</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>Submission Requirements</h2>
+        
+        <h3>Format & Length</h3>
+        <ul>
+          <li>Maximum 8 pages (excluding references)</li>
+          <li>Use the <strong>official WACV 2026 template</strong> (available soon)</li>
+          <li>References, appendices, and supplementary material do not count toward page limit</li>
+          <li>Supplementary material is optional but encouraged (code, videos, additional results)</li>
+        </ul>
+
+        <h3>Anonymization (Critical)</h3>
+        <div class="warning-box">
+          <strong>⚠️ Double-Blind Review Requirements</strong>
+          <p>Submissions must be fully anonymized for double-blind review:</p>
+          <ul>
+            <li>Remove all author names and affiliations</li>
+            <li>Remove acknowledgments section</li>
+            <li>Anonymize references to your own prior work (e.g., use "Previous work [X] proposed..." instead of "In our prior work [X], we proposed...")</li>
+            <li>Anonymize any identifying information in figures, tables, or supplementary materials</li>
+            <li>Do not include links to code repositories or project pages that reveal author identity</li>
+          </ul>
+        </div>
+
+        <h3>Required Sections</h3>
+        <p>Your paper should include the following sections (though you may organize differently if appropriate):</p>
+        
+        <div class="section-guide">
+          <div class="guide-item">
+            <h4>1. Abstract</h4>
+            <p>Clear summary of problem, approach, results, and clinical implications (200-250 words).</p>
+          </div>
+
+          <div class="guide-item">
+            <h4>2. Introduction</h4>
+            <p>Clinical motivation, current limitations, your contribution, and paper organization.</p>
+          </div>
+
+          <div class="guide-item">
+            <h4>3. Related Work</h4>
+            <p>Position your work within existing literature on technical methods and clinical applications.</p>
+          </div>
+
+          <div class="guide-item">
+            <h4>4. Methods</h4>
+            <p>Detailed technical description with sufficient detail for reproduction.</p>
+          </div>
+
+          <div class="guide-item">
+            <h4>5. Experiments</h4>
+            <p>Datasets, evaluation metrics, implementation details, baseline comparisons, ablation studies.</p>
+          </div>
+
+          <div class="guide-item">
+            <h4>6. Results</h4>
+            <p>Quantitative and qualitative results with statistical significance testing.</p>
+          </div>
+
+          <div class="guide-item">
+            <h4>7. Discussion</h4>
+            <p><strong>Critical section:</strong> Clinical implications, deployment considerations, limitations, failure cases, and future work.</p>
+          </div>
+
+          <div class="guide-item">
+            <h4>8. Conclusion</h4>
+            <p>Summary of contributions and broader impact.</p>
+          </div>
+        </div>
+
+        <h3>Clinical Relevance Statement (Required)</h3>
+        <div class="info-box secondary">
+          <p>
+            <strong>All regular papers must include a dedicated discussion of clinical relevance.</strong> 
+            This can be integrated into your Introduction and Discussion sections or appear as a separate section. Address:
+          </p>
+          <ul>
+            <li>What clinical problem does this solve?</li>
+            <li>What is the current clinical standard of care?</li>
+            <li>How does your method improve upon existing clinical practice?</li>
+            <li>What are the practical requirements for clinical deployment?</li>
+            <li>What clinical validation would be needed before deployment?</li>
+            <li>What are potential risks or failure modes in clinical use?</li>
+          </ul>
+        </div>
+
+        <h3>Data & Ethics Considerations</h3>
+        <ul>
+          <li><strong>Dataset Description:</strong> Clearly describe all datasets used, including source, size, demographics, and any preprocessing</li>
+          <li><strong>Ethics Approval:</strong> State whether ethics approval/IRB was obtained and any relevant approval numbers</li>
+          <li><strong>Data Availability:</strong> Indicate whether data is publicly available or under restricted access</li>
+          <li><strong>Limitations:</strong> Discuss dataset limitations, potential biases, and generalization concerns</li>
+          <li><strong>Patient Privacy:</strong> Confirm all data is de-identified and privacy-protected</li>
+        </ul>
+
+        <h2>Review Process</h2>
+        <div class="process-steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Submission</h4>
+              <p>Submit via the submission portal (link coming soon) by <strong>November 28, 2025</strong></p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Desk Review</h4>
+              <p>Organizers check for formatting compliance and topic relevance (1-2 days)</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Double-Blind Review</h4>
+              <p>At least 3 expert reviewers evaluate: technical quality, novelty, clinical relevance, experimental rigor, and presentation quality</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h4>Discussion Period</h4>
+              <p>Reviewers discuss and reach consensus on acceptance decision</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+              <h4>Notification</h4>
+              <p>Authors notified by <strong>January 2, 2026</strong> with detailed reviews</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">6</div>
+            <div class="step-content">
+              <h4>Camera-Ready</h4>
+              <p>Authors revise based on feedback and submit final version</p>
+            </div>
+          </div>
+        </div>
+
+        <h3>Review Criteria</h3>
+        <p>Papers will be evaluated on:</p>
+        <div class="criteria-grid">
+          <div class="criterion">
+            <strong>Technical Quality</strong>
+            <p>Soundness of approach, rigor of methodology</p>
+          </div>
+          <div class="criterion">
+            <strong>Novelty</strong>
+            <p>Originality and significance of contribution</p>
+          </div>
+          <div class="criterion">
+            <strong>Clinical Relevance</strong>
+            <p>Importance of problem and practical applicability</p>
+          </div>
+          <div class="criterion">
+            <strong>Experimental Validation</strong>
+            <p>Thoroughness of experiments and analysis</p>
+          </div>
+          <div class="criterion">
+            <strong>Presentation</strong>
+            <p>Clarity of writing and quality of figures</p>
+          </div>
+          <div class="criterion">
+            <strong>Reproducibility</strong>
+            <p>Sufficient detail for reproduction</p>
+          </div>
+        </div>
+
+        <h2>Presentation & Publication</h2>
+        
+        <h3>Accepted Papers Will:</h3>
+        <ul>
+          <li>✓ Be published in the official <strong>WACV 2026 Workshop Proceedings</strong></li>
+          <li>✓ Be indexed in IEEE Xplore and CVF Open Access</li>
+          <li>✓ Present as either oral or poster at the workshop</li>
+          <li>✓ Receive detailed reviews to strengthen the final version</li>
+          <li>✓ Have opportunity to participate in panel discussions</li>
+        </ul>
+
+        <h3>Presentation Formats</h3>
+        <p><strong>Oral Presentations:</strong> Selected high-impact papers will present in 12-minute talks (10 min presentation + 2 min Q&A)</p>
+        <p><strong>Poster Presentations:</strong> All accepted papers will present posters during dedicated poster sessions</p>
+        <p class="note">At least one author must register for and attend the workshop to present.</p>
+
+        <h2>Tips for a Strong Submission</h2>
+        <div class="tips-grid">
+          <div class="tip-card">
+            <h4>🎯 Clear Clinical Motivation</h4>
+            <p>Start by clearly articulating the clinical problem. Reviewers from both CV and clinical backgrounds should understand why this matters.</p>
+          </div>
+
+          <div class="tip-card">
+            <h4>📊 Comprehensive Evaluation</h4>
+            <p>Don't just report metrics. Analyze results, show failure cases, discuss limitations, and include statistical significance tests.</p>
+          </div>
+
+          <div class="tip-card">
+            <h4>🔬 Rigorous Baselines</h4>
+            <p>Compare against relevant and strong baselines. Show ablations to demonstrate the value of each component.</p>
+          </div>
+
+          <div class="tip-card">
+            <h4>💡 Deployment Discussion</h4>
+            <p>Address practical deployment: What hardware is needed? How much data? What are integration challenges? Regulatory considerations?</p>
+          </div>
+
+          <div class="tip-card">
+            <h4>⚖️ Fairness & Limitations</h4>
+            <p>Explicitly discuss dataset biases, population representation, and performance across different demographic groups.</p>
+          </div>
+
+          <div class="tip-card">
+            <h4>✍️ Clear Writing</h4>
+            <p>Write clearly for both CV researchers and clinical readers. Define medical terms and explain clinical context.</p>
+          </div>
+        </div>
+
+        <h2>Important Dates</h2>
+        <div class="dates-list">
+          <div class="date-item">
+            <strong>Submission Deadline:</strong>
+            <span>November 28, 2025 (23:59 AoE)</span>
+          </div>
+          <div class="date-item">
+            <strong>Notification to Authors:</strong>
+            <span>January 2, 2026</span>
+          </div>
+          <div class="date-item">
+            <strong>Camera-Ready Deadline:</strong>
+            <span>January 30, 2026</span>
+          </div>
+          <div class="date-item highlight">
+            <strong>Workshop Day:</strong>
+            <span>March 6, 2026</span>
+          </div>
+        </div>
+
+        <h2>Submission Portal</h2>
+        <div class="info-box primary">
+          <p><strong>Submission portal will open in October 2025.</strong></p>
+          <p>We will use a standard conference management system (details coming soon). You will need to create an account and upload your PDF submission.</p>
+          <p>Check back here or contact <a href="mailto:p2pcv.wacv@gmail.com">p2pcv.wacv@gmail.com</a> for updates.</p>
+        </div>
+
+        <h2>Questions?</h2>
+        <p>
+          If you have questions about the Regular Papers track, please contact us at 
+          <a href="mailto:p2pcv.wacv@gmail.com">p2pcv.wacv@gmail.com</a> with "Regular Papers" in the subject line.
+        </p>
+
+        <div class="cta-section">
+          <h3>Ready to Submit?</h3>
+          <p>Start preparing your submission for the Regular Papers track!</p>
+          <div class="button-group">
+            <a href="index.html#dates" class="btn btn-primary">View All Deadlines</a>
+            <a href="index.html#cfp" class="btn btn-secondary">View Other Tracks</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="assets/logo.svg" alt="P2P-CV Logo" class="footer-logo">
+          <p>Bridging Computer Vision State-of-the-Art with Clinical Impact</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#cfp">Call for Papers</a></li>
+            <li><a href="extended-abstracts.html">Extended Abstracts</a></li>
+            <li><a href="problem-pitch.html">Problem-Pitch</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <p><a href="mailto:p2pcv.wacv@gmail.com">p2pcv.wacv@gmail.com</a></p>
+          <p>WACV 2026 Workshop</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pixels to Patients (P2P-CV) @ WACV 2026. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
