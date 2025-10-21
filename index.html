@@ -1,127 +1,647 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>P2P-CV @ WACV 2026 — Pixels to Patients</title>
-  <meta name="description" content="Pixels to Patients (P2P-CV): Bridging Computer Vision State-of-the-Art with Clinical Impact — WACV 2026 Workshop." />
-  <link rel="icon" href="assets/favicon.png" type="image/png" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Pixels to Patients: Bridging Computer Vision State-of-the-Art with Clinical Impact — Full-Day Workshop at WACV 2026">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="brand">
-      <img src="assets/logo.svg" alt="P2P-CV logo" class="logo" />
-      <div class="brand-text">
-        <h1>Pixels to Patients (P2P-CV)</h1>
-        <p class="subtitle">Bridging Computer Vision State-of-the-Art with Clinical Impact</p>
-        <p><strong>Full-Day Workshop · March 6, 2026 · WACV 2026</strong></p>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <img src="assets/logo.svg" alt="P2P-CV Logo" class="nav-logo">
+        <span class="nav-title">P2P-CV @ WACV 2026</span>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#cfp">Call for Papers</a></li>
+        <li><a href="#dates">Important Dates</a></li>
+        <li><a href="#program">Program</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Pixels to Patients</h1>
+        <p class="hero-subtitle">Bridging Computer Vision State-of-the-Art with Clinical Impact</p>
+        <div class="hero-details">
+          <div class="detail-item">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>March 6, 2026</span>
+          </div>
+          <div class="detail-item">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <span>WACV 2026</span>
+          </div>
+          <div class="detail-item">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Full-Day Workshop</span>
+          </div>
+        </div>
+        <div class="hero-cta">
+          <a href="#cfp" class="btn btn-primary">Submit Your Work</a>
+          <a href="#program" class="btn btn-secondary">View Program</a>
+        </div>
       </div>
     </div>
-  </header>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z" fill="white"/>
+      </svg>
+    </div>
+  </section>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" id="hero">
-      <div class="hero-text">
-        <h2>From Algorithms to Impact</h2>
-        <p>
-          <b>P2P-CV</b> connects computer vision researchers, clinicians, and industry leaders 
-          to accelerate the translation of AI breakthroughs into real-world patient care. 
-          Join us at <strong>WACV 2026</strong> to explore the frontier between innovation and clinical deployment.
-        </p>
-        <a href="#about" class="btn-primary">Learn More ↓</a>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About the Workshop</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">
+            <strong>Pixels to Patients (P2P-CV)</strong> is a full-day workshop dedicated to bridging the gap between 
+            computer vision research and its safe, effective deployment in real-world clinical practice.
+          </p>
+          <p>
+            Medical imaging is among the most socially impactful domains of computer vision, yet a persistent gap remains 
+            between research breakthroughs and their safe, effective use in real-world clinics. WACV, with its strong 
+            tradition in applied computer vision, is the ideal venue to address this translation gap.
+          </p>
+          <p>
+            This workshop positions healthcare as a case study for broader CV challenges that arise whenever algorithms 
+            move from the lab to deployment. Topics such as domain generalization, fairness and bias mitigation, 
+            foundation models, trustworthy and explainable AI, and human–AI collaboration are central not only to 
+            medical imaging but also to autonomous driving, robotics, and other safety-critical applications.
+          </p>
+        </div>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <div class="highlight-icon">🔬</div>
+            <h3>Research Excellence</h3>
+            <p>Cutting-edge computer vision methods for medical imaging</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🏥</div>
+            <h3>Clinical Impact</h3>
+            <p>Real-world deployment and patient care outcomes</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🤝</div>
+            <h3>Collaboration</h3>
+            <p>Bridging researchers, clinicians, and industry</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">⚖️</div>
+            <h3>Trustworthy AI</h3>
+            <p>Fairness, explainability, and safety in healthcare</p>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="panel fade-in">
-      <h2>About the Workshop</h2>
-      <p>
-        <b>Pixels to Patients (P2P-CV)</b> is a full-day workshop dedicated to bridging the gap between 
-        computer-vision research and its safe, effective deployment in healthcare.
-        It addresses the complete pipeline—from foundation model training to clinical monitoring and regulation.
+  <!-- Call for Papers Section -->
+  <section id="cfp" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Call for Papers</h2>
+      <p class="section-intro">
+        We invite original research contributions that not only present technical innovations but also critically 
+        engage with the challenges of translating computer vision from research into clinical practice.
       </p>
-      <ul>
-        <li>Foundation models and multimodal learning for medical imaging.</li>
-        <li>Domain generalization and cross-institution robustness.</li>
-        <li>Trustworthy, explainable, and fair AI for clinical deployment.</li>
-        <li>Human–AI collaboration and continual learning in healthcare systems.</li>
-      </ul>
-    </section>
 
-    <!-- KEYNOTE SPEAKERS -->
-    <section id="keynotes" class="panel fade-in">
-      <h2>Keynote Speakers</h2>
-      <div class="org-grid">
-
-        <div class="speaker-card">
-          <img src="assets/keynote_erickson.jpg" alt="Bradley Erickson photo" class="speaker-photo" />
-          <h3>Prof. Bradley J. Erickson, M.D., Ph.D.</h3>
-          <p><b>Mayo Clinic</b> — Director, Mayo Clinic AI Lab</p>
-          <p>
-            Pioneering leader in quantitative imaging and computer-aided diagnosis.
-            His work integrates AI into radiology workflows for disease detection and prognosis.
-          </p>
+      <div class="topics-grid">
+        <div class="topic-card">
+          <h3>Foundation Models</h3>
+          <p>Pre-training, fine-tuning, and adaptation for data-scarce medical imaging environments</p>
         </div>
-
-        <div class="speaker-card">
-          <img src="assets/keynote_chao.jpg" alt="Chieh-Ju Chao photo" class="speaker-photo" />
-          <h3>Prof. Chieh-Ju Chao, M.D.</h3>
-          <p><b>Mayo Clinic</b> — Department of Cardiology</p>
-          <p>
-            Develops intelligent imaging pipelines linking algorithmic insights to real-world outcomes in cardiology.
-          </p>
+        <div class="topic-card">
+          <h3>Vision-Language Learning</h3>
+          <p>Multimodal learning for clinical decision support and automated reporting</p>
         </div>
-
-        <div class="speaker-card">
-          <img src="assets/keynote_philbrick.jpg" alt="Kenneth Philbrick photo" class="speaker-photo" />
-          <h3>Dr. Kenneth Philbrick, Ph.D.</h3>
-          <p><b>Google Research (Health AI)</b></p>
-          <p>
-            Research lead for foundation models and multimodal learning in healthcare, including <em>MedGemma</em>.
-          </p>
+        <div class="topic-card">
+          <h3>Domain Adaptation</h3>
+          <p>Improving robustness across scanners, sites, and patient populations</p>
         </div>
-
-        <div class="speaker-card">
-          <img src="assets/keynote_navab.jpg" alt="Nassir Navab photo" class="speaker-photo" />
-          <h3>Prof. Nassir Navab, Ph.D.</h3>
-          <p><b>Technical University of Munich & Helmholtz Munich</b></p>
-          <p>
-            Pioneer in medical AR and surgical AI. Leads research on human–AI collaboration and computer-assisted interventions.
-          </p>
+        <div class="topic-card">
+          <h3>Clinical Deployment</h3>
+          <p>Validation, monitoring, and continual learning in practice</p>
+        </div>
+        <div class="topic-card">
+          <h3>Explainable AI</h3>
+          <p>Ensuring safety, transparency, and interpretability</p>
+        </div>
+        <div class="topic-card">
+          <h3>Fairness & Equity</h3>
+          <p>Auditing and mitigating bias for diverse populations</p>
+        </div>
+        <div class="topic-card">
+          <h3>Data-Efficient Training</h3>
+          <p>Active, weak, and self-supervised learning approaches</p>
+        </div>
+        <div class="topic-card">
+          <h3>Quantitative Biomarkers</h3>
+          <p>Using vision models for novel biomarker discovery</p>
+        </div>
+        <div class="topic-card">
+          <h3>Human-AI Systems</h3>
+          <p>Collaborative interfaces and human-in-the-loop learning</p>
         </div>
       </div>
-    </section>
 
-    <!-- OUTCOMES -->
-    <section id="outcomes" class="panel fade-in">
-      <h2>Expected Outcomes</h2>
-      <ul>
-        <li>Concrete strategies for safe deployment of foundation models in healthcare.</li>
-        <li>Collaborations linking unmet clinical problems with technical solutions.</li>
-        <li>Identification of datasets and benchmarks for clinical AI translation.</li>
-        <li>Proceedings published in official <b>WACV 2026 Workshop</b> volume.</li>
-      </ul>
-      <div style="text-align:center; margin-top:2rem;">
-        <a href="program.html" class="btn-primary">View Full Program →</a>
+      <div class="submission-tracks">
+        <h3>Submission Tracks</h3>
+        <div class="tracks-container">
+          <div class="track-card">
+            <div class="track-header">
+              <span class="track-number">1</span>
+              <h4>Regular Papers</h4>
+            </div>
+            <div class="track-details">
+              <p><strong>Length:</strong> Up to 8 pages (excluding references)</p>
+              <p><strong>Type:</strong> Archival - Published in WACV 2026 Workshop Proceedings</p>
+              <p><strong>Purpose:</strong> Complete, original research with clinical relevance discussions</p>
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-header">
+              <span class="track-number">2</span>
+              <h4>Extended Abstracts</h4>
+            </div>
+            <div class="track-details">
+              <p><strong>Length:</strong> 2-4 pages (excluding references)</p>
+              <p><strong>Type:</strong> Non-archival</p>
+              <p><strong>Purpose:</strong> Preliminary work, ongoing research, or negative results</p>
+            </div>
+          </div>
+          <div class="track-card">
+            <div class="track-header">
+              <span class="track-number">3</span>
+              <h4>Problem-Pitch Proposals</h4>
+            </div>
+            <div class="track-details">
+              <p><strong>Length:</strong> 2 slides maximum</p>
+              <p><strong>Type:</strong> Non-archival</p>
+              <p><strong>Purpose:</strong> Clinicians/industry present clinical challenges seeking technical solutions</p>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
 
-  <footer class="site-footer">
-    <small>© 2025 Pixels to Patients (P2P-CV) · WACV 2026 · <a href="#hero">Back to Top ↑</a></small>
+      <div class="review-process">
+        <h3>Review Process</h3>
+        <ul>
+          <li><strong>Double-blind peer review</strong> for Regular Papers and Extended Abstracts</li>
+          <li>Manuscripts must be <strong>fully anonymized</strong> (no author names, affiliations, or self-identifying references)</li>
+          <li>Problem-Pitch Proposals reviewed by organizers for clarity, impact, and collaboration potential</li>
+          <li>At least one presenting author must register for the workshop</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Important Dates Section -->
+  <section id="dates" class="section">
+    <div class="container">
+      <h2 class="section-title">Important Dates</h2>
+      <p class="section-intro">All deadlines are 23:59 Anywhere on Earth (AoE)</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>CFP Release</h3>
+            <p class="date">October 2025</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Submission Deadline</h3>
+            <p class="date">November 28, 2025</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Extended Deadline</h3>
+            <p class="date">December 1, 2025</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Notification to Authors</h3>
+            <p class="date">January 2, 2026</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Poster Upload</h3>
+            <p class="date">January 30, 2026</p>
+          </div>
+        </div>
+        <div class="timeline-item highlight">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Workshop Day</h3>
+            <p class="date">March 6, 2026</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Program Section -->
+  <section id="program" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Program Overview</h2>
+      <p class="section-intro">Full-day schedule (tentative)</p>
+      <div class="schedule">
+        <div class="schedule-item">
+          <div class="schedule-time">09:00 - 09:10</div>
+          <div class="schedule-content">
+            <h3>Opening Remarks</h3>
+            <p>Welcome and workshop introduction</p>
+          </div>
+        </div>
+        <div class="schedule-item keynote">
+          <div class="schedule-time">09:10 - 09:50</div>
+          <div class="schedule-content">
+            <h3>Keynote 1: Prof. Bradley J. Erickson</h3>
+            <p><em>Building Multidisciplinary Bridges for Medical AI</em></p>
+            <span class="badge">Mayo Clinic</span>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">09:50 - 10:30</div>
+          <div class="schedule-content">
+            <h3>Oral Session I</h3>
+            <p>Accepted paper presentations</p>
+          </div>
+        </div>
+        <div class="schedule-item break">
+          <div class="schedule-time">10:30 - 11:00</div>
+          <div class="schedule-content">
+            <h3>Coffee Break & Networking</h3>
+          </div>
+        </div>
+        <div class="schedule-item keynote">
+          <div class="schedule-time">11:00 - 11:30</div>
+          <div class="schedule-content">
+            <h3>Keynote 2: Prof. Chieh-Ju Chao</h3>
+            <p><em>Intelligent Imaging Pipelines for Cardiology: From Algorithms to Outcomes</em></p>
+            <span class="badge">Mayo Clinic</span>
+          </div>
+        </div>
+        <div class="schedule-item special">
+          <div class="schedule-time">11:30 - 12:30</div>
+          <div class="schedule-content">
+            <h3>Collaboration-Building Session</h3>
+            <p>Problem-Pitch & Solution-Match</p>
+          </div>
+        </div>
+        <div class="schedule-item break">
+          <div class="schedule-time">12:30 - 14:00</div>
+          <div class="schedule-content">
+            <h3>Lunch + Poster Session</h3>
+          </div>
+        </div>
+        <div class="schedule-item keynote">
+          <div class="schedule-time">14:00 - 14:30</div>
+          <div class="schedule-content">
+            <h3>Keynote 3: Dr. Kenneth Philbrick</h3>
+            <p><em>Foundation Models in Health: Opportunities, Challenges, and Lessons from MedGemma</em></p>
+            <span class="badge">Google Research (Health AI)</span>
+          </div>
+        </div>
+        <div class="schedule-item special">
+          <div class="schedule-time">14:30 - 15:15</div>
+          <div class="schedule-content">
+            <h3>Fireside Chat: Prof. Nassir Navab</h3>
+            <p><em>Research–Clinical Translation</em></p>
+            <span class="badge">TUM / Helmholtz Munich</span>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">15:15 - 15:30</div>
+          <div class="schedule-content">
+            <h3>Oral Session II</h3>
+            <p>Accepted paper presentations</p>
+          </div>
+        </div>
+        <div class="schedule-item break">
+          <div class="schedule-time">15:30 - 16:00</div>
+          <div class="schedule-content">
+            <h3>Coffee Break</h3>
+          </div>
+        </div>
+        <div class="schedule-item panel">
+          <div class="schedule-time">16:00 - 16:45</div>
+          <div class="schedule-content">
+            <h3>Panel Discussion: Deployment in the Real World</h3>
+            <p>Clinical Monitoring and Interoperability Standards</p>
+            <div class="panelists">
+              <span class="panelist">Gian Marco Conte (Mayo Clinic)</span>
+              <span class="panelist">Kevin O'Donnell (Canon Medical)</span>
+              <span class="panelist">Paulo Kuriki (UT Southwestern)</span>
+            </div>
+          </div>
+        </div>
+        <div class="schedule-item">
+          <div class="schedule-time">16:45 - 17:00</div>
+          <div class="schedule-content">
+            <h3>Closing Remarks</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Speakers Section -->
+  <section id="speakers" class="section">
+    <div class="container">
+      <h2 class="section-title">Keynote Speakers</h2>
+      <div class="speakers-grid">
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="assets/keynote_erickson.svg" alt="Prof. Bradley J. Erickson">
+          </div>
+          <div class="speaker-info">
+            <h3>Prof. Bradley J. Erickson</h3>
+            <p class="speaker-title">M.D., Ph.D.</p>
+            <p class="speaker-affiliation">Mayo Clinic</p>
+            <p class="speaker-bio">
+              Professor of Radiology and Director of the Mayo Clinic AI Lab. His work focuses on quantitative 
+              imaging and computer-aided diagnosis, developing AI algorithms for disease detection, prognosis, 
+              and prediction of molecular markers.
+            </p>
+          </div>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="assets/keynote_chao.svg" alt="Prof. Chieh-Ju Chao">
+          </div>
+          <div class="speaker-info">
+            <h3>Prof. Chieh-Ju Chao</h3>
+            <p class="speaker-title">M.D.</p>
+            <p class="speaker-affiliation">Mayo Clinic - Department of Cardiology</p>
+            <p class="speaker-bio">
+              Develops intelligent imaging pipelines linking algorithmic insights to real-world outcomes in 
+              cardiology, bridging the gap between advanced CV techniques and clinical practice.
+            </p>
+          </div>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="assets/keynote_philbrick.svg" alt="Dr. Kenneth Philbrick">
+          </div>
+          <div class="speaker-info">
+            <h3>Dr. Kenneth Philbrick</h3>
+            <p class="speaker-title">Ph.D.</p>
+            <p class="speaker-affiliation">Google Research (Health AI)</p>
+            <p class="speaker-bio">
+              Research lead for foundation models and multimodal learning in healthcare. His work includes 
+              the development of MedGemma and advancing the application of large language models in medicine.
+            </p>
+          </div>
+        </div>
+        <div class="speaker-card">
+          <div class="speaker-image">
+            <img src="assets/keynote_navab.svg" alt="Prof. Nassir Navab">
+          </div>
+          <div class="speaker-info">
+            <h3>Prof. Nassir Navab</h3>
+            <p class="speaker-title">Ph.D.</p>
+            <p class="speaker-affiliation">Technical University of Munich & Helmholtz Munich</p>
+            <p class="speaker-bio">
+              Pioneer in medical augmented reality and surgical AI. Leads research on human–AI collaboration 
+              and computer-assisted interventions, with decades of experience translating research to practice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Organizers Section -->
+  <section id="organizers" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Organizers</h2>
+      
+      <div class="organizers-section">
+        <h3>Workshop Chairs</h3>
+        <div class="organizers-grid">
+          <div class="organizer-card">
+            <h4>Dr. Sahika Betul Yayli</h4>
+            <p class="organizer-title">M.D.</p>
+            <p class="organizer-affiliation">Mayo Clinic AI Lab</p>
+            <p>Postdoctoral Research Fellow specializing in medical computer vision, segmentation, radiology 
+            vision-language models, and active learning. Previously Senior AI/ML Engineer at Turkcell.</p>
+            <a href="mailto:yayli.sahikabetul@mayo.edu" class="email-link">yayli.sahikabetul@mayo.edu</a>
+          </div>
+          <div class="organizer-card">
+            <h4>Prof. Bradley J. Erickson</h4>
+            <p class="organizer-title">M.D., Ph.D.</p>
+            <p class="organizer-affiliation">Mayo Clinic AI Lab</p>
+            <p>Professor of Radiology and Director of the Mayo Clinic AI Lab. Pioneer in quantitative imaging 
+            and computer-aided diagnosis.</p>
+            <a href="mailto:bje@mayo.edu" class="email-link">bje@mayo.edu</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="organizers-section">
+        <h3>Program Chairs</h3>
+        <div class="organizers-grid">
+          <div class="organizer-card">
+            <h4>Dr. Bardia Khosravi</h4>
+            <p class="organizer-title">M.D., M.P.H., M.H.P.E.</p>
+            <p class="organizer-affiliation">Yale University</p>
+            <p>Radiology resident with extensive experience in full-stack development and machine learning, 
+            focusing on the intersection of radiology, AI, and medical education.</p>
+            <a href="mailto:bardia.khosravi@yale.edu" class="email-link">bardia.khosravi@yale.edu</a>
+          </div>
+          <div class="organizer-card">
+            <h4>Dr. Pouria Rouzrokh</h4>
+            <p class="organizer-title">M.D., M.P.H., M.H.P.E.</p>
+            <p class="organizer-affiliation">Yale University</p>
+            <p>Diagnostic Radiology resident applying machine learning to radiology imaging and clinical 
+            workflow optimization, exploring generative AI in education.</p>
+            <a href="mailto:pouria.rouzrokh@yale.edu" class="email-link">pouria.rouzrokh@yale.edu</a>
+          </div>
+          <div class="organizer-card">
+            <h4>Dr. Elham Mahmoudi</h4>
+            <p class="organizer-title">M.D., M.P.H.</p>
+            <p class="organizer-affiliation">Mayo Clinic AI Lab</p>
+            <p>Postdoctoral Research Fellow focusing on deep learning analysis of cardiac imaging and 
+            textual medical documents.</p>
+            <a href="mailto:mahmoudi.elham@mayo.edu" class="email-link">mahmoudi.elham@mayo.edu</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="organizers-section">
+        <h3>Program Committee</h3>
+        <div class="committee-list">
+          <div class="committee-column">
+            <ul>
+              <li>Prof. Bradley J. Erickson (Mayo Clinic)</li>
+              <li>Prof. Chieh-Ju Chao (Mayo Clinic)</li>
+              <li>Prof. Nassir Navab (TUM)</li>
+              <li>Dr. Kenneth Philbrick (Google Research)</li>
+              <li>Kevin O'Donnell (Canon Medical)</li>
+              <li>Dr. Gian Marco Conte (Mayo Clinic)</li>
+              <li>Huzeyfe Ayaz (TUM)</li>
+              <li>Dr. Salih Beyaz (Baskent University)</li>
+              <li>Dr. Sahika Betul Yayli (Mayo Clinic)</li>
+            </ul>
+          </div>
+          <div class="committee-column">
+            <ul>
+              <li>Dr. Nicolo Pecco (San Raffaele Hospital)</li>
+              <li>Dr. Jaidip Jagtap (Mayo Clinic)</li>
+              <li>Dr. Amirali Khosravi (Mayo Clinic)</li>
+              <li>Dr. Elham Mahmoudi (Mayo Clinic)</li>
+              <li>Dr. Allison Scarbrough (Mayo Clinic)</li>
+              <li>Fatih Ibrahim Ozlugedik (TUM/Helmholtz)</li>
+              <li>Dr. Pouria Rouzrokh (Yale University)</li>
+              <li>Dr. Bardia Khosravi (Yale University)</li>
+              <li>Dr. Ersin Kilic (Nevsehir University)</li>
+              <li>Dr. Paulo Kuriki (UTSW)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expected Outcomes Section -->
+  <section id="outcomes" class="section">
+    <div class="container">
+      <h2 class="section-title">Expected Outcomes & Impact</h2>
+      <div class="outcomes-grid">
+        <div class="outcome-card">
+          <div class="outcome-icon">💡</div>
+          <h3>Knowledge Exchange</h3>
+          <p>Direct dialogue between CV researchers, clinicians, and industry leaders on practical deployment challenges</p>
+        </div>
+        <div class="outcome-card">
+          <div class="outcome-icon">🚧</div>
+          <h3>Barrier Identification</h3>
+          <p>Clear understanding of methodological, infrastructural, and regulatory obstacles to safe AI deployment</p>
+        </div>
+        <div class="outcome-card">
+          <div class="outcome-icon">🤝</div>
+          <h3>New Collaborations</h3>
+          <p>Problem-Pitch sessions catalyzing partnerships between those with clinical problems and technical solutions</p>
+        </div>
+        <div class="outcome-card">
+          <div class="outcome-icon">📚</div>
+          <h3>Archival Proceedings</h3>
+          <p>Accepted papers published in official WACV 2026 workshop proceedings</p>
+        </div>
+        <div class="outcome-card">
+          <div class="outcome-icon">⚖️</div>
+          <h3>Robust & Equitable Systems</h3>
+          <p>Focus on fairness, diversity, and accessibility across all deployment contexts</p>
+        </div>
+        <div class="outcome-card">
+          <div class="outcome-icon">🌍</div>
+          <h3>Broader CV Impact</h3>
+          <p>Insights applicable to autonomous driving, robotics, and other safety-critical AI applications</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contact & Information</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Primary Contact</h3>
+          <p><strong>Dr. Sahika Betul Yayli, M.D.</strong></p>
+          <p>Mayo Clinic AI Lab</p>
+          <a href="mailto:yayli.sahikabetul@mayo.edu">yayli.sahikabetul@mayo.edu</a>
+        </div>
+        <div class="contact-card">
+          <h3>Workshop Details</h3>
+          <p><strong>Format:</strong> Full-Day Workshop</p>
+          <p><strong>Expected Audience:</strong> 50-90 participants</p>
+          <p><strong>Poster Boards:</strong> 20 available</p>
+        </div>
+        <div class="contact-card">
+          <h3>Proceedings</h3>
+          <p><strong>Publication:</strong> Official WACV 2026 Workshop Proceedings</p>
+          <p><strong>Review:</strong> Double-blind peer review</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <img src="assets/logo.svg" alt="P2P-CV Logo" class="footer-logo">
+          <p>Bridging Computer Vision State-of-the-Art with Clinical Impact</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#cfp">Call for Papers</a></li>
+            <li><a href="#dates">Important Dates</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Institutional Partners</h4>
+          <ul>
+            <li>Mayo Clinic</li>
+            <li>Yale University</li>
+            <li>Technical University of Munich</li>
+            <li>Helmholtz Munich</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Pixels to Patients (P2P-CV) @ WACV 2026. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
 
-  <!-- Fade-in effect script -->
-  <script>
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) entry.target.classList.add('visible');
-    });
-  });
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
