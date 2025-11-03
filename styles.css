@@ -2020,3 +2020,184 @@ ul.checklist li::before {
     left: 20px;
   }
 }
+/* Submission Alert Section Styles */
+/* Add this to your existing styles.css file */
+
+.submission-alert {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1.25rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.submission-alert::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,128C960,128,1056,192,1152,197.3C1248,203,1344,149,1392,122.7L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom center;
+  background-size: cover;
+  opacity: 0.3;
+}
+
+.alert-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 1;
+  flex-wrap: wrap;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 1.25rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.alert-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.alert-icon svg {
+  width: 26px;
+  height: 26px;
+  stroke: white;
+  stroke-width: 2.5;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.7);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(102, 126, 234, 0);
+  }
+}
+
+.alert-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.alert-text h3 {
+  margin: 0 0 0.25rem 0;
+  color: #1a202c;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.alert-text p {
+  margin: 0;
+  color: #4a5568;
+  font-size: 0.9rem;
+}
+
+.alert-text strong {
+  color: #667eea;
+  font-weight: 600;
+}
+
+.alert-action {
+  flex-shrink: 0;
+}
+
+.btn-lg {
+  padding: 0.625rem 1.5rem;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-lg:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
+}
+
+.external-icon {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .alert-content {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  
+  .alert-text {
+    min-width: auto;
+  }
+  
+  .alert-text h3 {
+    font-size: 1.15rem;
+  }
+  
+  .alert-text p {
+    font-size: 0.85rem;
+  }
+  
+  .btn-lg {
+    width: 100%;
+    justify-content: center;
+    padding: 0.625rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .submission-alert {
+    padding: 1rem 0;
+  }
+  
+  .alert-content {
+    padding: 1rem;
+  }
+  
+  .alert-icon {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .alert-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .alert-text h3 {
+    font-size: 1.05rem;
+  }
+  
+  .alert-text p {
+    font-size: 0.8rem;
+  }
+  
+  .btn-lg {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .external-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+
